@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './namelogo.png';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Weather from './Weather'
+//import Weather from './Weather'
 
 import Navbar from './components/Navbar';
 import Home from './pages';
@@ -33,7 +33,7 @@ class App extends Component {
             <Route path='/' exact component={Home} />
             <Route path='/home' component={Home} />
             <Route path='/about' component={About} />
-            <Route path='/events' component={Events, Weather} />
+            <Route path='/events' component={Events} />
             <Route path='/annual' component={AnnualReport} />
             <Route path='/team' component={Teams} />
             <Route path='/blogs' component={Blogs} />
